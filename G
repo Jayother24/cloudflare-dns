@@ -1,0 +1,25 @@
+Record: 4/7 
+
+{"comment": "2nd 'MX' Record", "content": "aspmx.l.google.com", "created_on": "2020-09-17T11:18:19.583054Z", "id": "7bdb2e46037df332e5abdd45f8f981f5",
+ "locked": false, "meta": {"auto_added": false, "managed_by_apps": false, "managed_by_argo_tunnel": false, "source": 
+ "primary"}, "modified_on": "2020-09-17T11:18:19.583054Z", "name": "example.com", "priority": 5, "proxiable": false, 
+ "proxied": false, "ttl": 3600, "type": "MX", "zone_id": "8b717207bcee4047af2e9dff95832996", "zone_name": "example.com"} 
+
+Domain: example.com
+Type: MX
+Name: example.com
+Content: aspmx.l.google.com
+Priority: 5
+Proxiable: False
+Proxied: False
+TTL: 3600
+Comment: 2nd 'MX' Record
+Modified: 2020-09-17T11:18:19.583054Z
+./cf-dns.sh -d example.com -t MX -n example.com -c aspmx.l.google.com -p 5 -l 3600 -C "2nd 'MX' Record" [-k] [-S] [-A]
+./cf-dns.sh -d example.com -t MX -n example.com -c aspmx.l.google.com -Z [-a] [-k] [-S]
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Record: 5/7
+
+...
